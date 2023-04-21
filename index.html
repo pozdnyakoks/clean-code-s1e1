@@ -8,50 +8,50 @@
 </head>
 
 <body class="body">
-  <header class="aaa">
-    <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix: 1.Do: urgent and important; 2.Plan: Important, not urgent; 3.Delegate: Not important, urgent; 4. Eliminate: Not important, not urgent">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <header class="header">
+    <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix: 1.Do: urgent and important; 2.Plan: Important, not urgent; 3.Delegate: Not important, urgent; 4. Eliminate: Not important, not urgent">
+    <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="centered-main-page-element">
-    <section id="topSectionForAddingElementToList">
-      <label class="new-task" for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task text-input" type="text">
-        <button class="btn">Add</button>
+  <main class="main">
+    <section class="add">
+      <label class="add__new-task" for="new-task">Add Item</label>
+      <div class="add__task-wrapper">
+        <input id="new-task" class="add__task task text-input" type="text">
+        <button class="add__btn btn">Add</button>
       </div>
     </section>
-    <section>
-      <h3 class="title3">Todo</h3>
-      <ul id="incompleteTasks">
-        <li class="list-item">
-          <input type="checkbox" class="checkbox-input">
+    <section class="todo">
+      <h3 class="todo__title title3">Todo</h3>
+      <ul id="incomplete-tasks" class="todo__list">
+        <li class="todo__list-item list-item">
+          <input type="checkbox" class="todo__checkbox-input checkbox-input">
           <label class="task item-label">Pay Bills</label>
-          <input type="text" class="task text-input list-item-text">
-          <button class="btn" class="edit">Edit</button>
-          <button class="btn" class="delete">
+          <input type="text" class="task text-input list-text-input">
+          <button class="btn edit">Edit</button>
+          <button class="btn delete">
             <img class="btn-image" alt="delete button" src="./remove.svg">
           </button>
         </li>
-        <li class="list-item" class="editMode">
-          <input type="checkbox" class="checkbox-input">
-          <label class="task item-label edit-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task text-input list-item-text edit-input">
-          <button class="btn" class="edit">Save</button>
-          <button class="btn" class="delete">
+        <li class="todo__list-item list-item edit-mode">
+          <input type="checkbox" class="todo__checkbox-input checkbox-input">
+          <label class="task item-label item-label-edit">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task text-input list-text-input list-text-input-edit">
+          <button class="btn edit">Save</button>
+          <button class="btn delete">
             <img class="btn-image" alt="delete button" src="./remove.svg">
           </button>
         </li>
       </ul>
     </section>
-    <section>
-      <h3 class="title3">Completed</h3>
-      <ul id="completed-tasks">
-        <li class="list-item">
-          <input type="checkbox" checked class="checkbox-input ">
-          <label class="task item-label completed-label">See the Doctor</label>
-          <input type="text" class="task text-input list-item-text">
-          <button class="btn" class="edit">Edit</button>
-          <button class="btn" class="delete">
+    <section class="completed">
+      <h3 class="completed__title title3">Completed</h3>
+      <ul id="completed-tasks" class="completed__list">
+        <li class="completed__list-item list-item">
+          <input type="checkbox" checked class="completed__checkbox-input checkbox-input">
+          <label class="task item-label">See the Doctor</label>
+          <input type="text" class="task text-input list-text-input">
+          <button class="btn edit">Edit</button>
+          <button class="btn delete">
             <img class="btn-image" alt="delete button" src="./remove.svg">
           </button>
         </li>
